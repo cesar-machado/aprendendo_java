@@ -17,7 +17,7 @@ public class Loop {
                 break;
             } else if (numeroDigitado < numeroGerado) {
                 System.out.println("O número é menor do que o digitado");
-            } else  {
+            } else {
                 System.out.println("O número é maior do que o digitado");
             }
         }

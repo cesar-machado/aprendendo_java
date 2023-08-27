@@ -14,7 +14,7 @@ public class Banco {
         System.out.println("***************************************");
 
         String menu = """ 
-                
+                                
                 *** Digite a sua opção***
                 1 - Consultar o Saldo
                 2 - Fazer uma Transferência
