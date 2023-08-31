@@ -1,12 +1,17 @@
 package br.com.cmach.empresa.modelos;
 
-public class Funcionarios {
+public class Funcionarios implements Comparable<Funcionarios> {
     private String nome;
     private double salario;
     private String cargo;
     private String setor;
     private boolean licensa;
     private int codigoDoFuncionario;
+
+    public Funcionarios(String nome, String cargo) {
+        this.nome =  nome;
+        this.cargo = cargo;
+    }
 
     public int getCodigoDoFuncionario() {
         return codigoDoFuncionario;
@@ -54,5 +59,10 @@ public class Funcionarios {
 
     public void setLicensa(boolean licensa) {
         this.licensa = licensa;
+    }
+
+    @Override
+    public int compareTo(Funcionarios outroFuncionario) {
+        return this.getNome().compareTo(outroFuncionario.getNome());
     }
 }

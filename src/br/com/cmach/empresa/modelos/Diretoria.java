@@ -5,6 +5,10 @@ public class Diretoria extends Funcionarios {
 
     private boolean ativo;
 
+    public Diretoria(String nome, String cargo) {
+        super(nome, cargo);
+    }
+
     public boolean isCeo() {
         return ceo;
     }
